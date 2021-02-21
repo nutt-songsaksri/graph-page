@@ -7,8 +7,11 @@ import {
   CardContent,
   Typography,
   Button,
+  IconButton,
+  colors,
 } from "@material-ui/core";
 import TrendingUpIcon from "@material-ui/icons/TrendingUp";
+import InfoIcon from "@material-ui/icons/Info";
 
 function App() {
   return (
@@ -33,7 +36,7 @@ function App() {
                 <Grid item container spacing={2}>
                   <Grid item xs={6} style={{ backgroundColor: "yellow" }}>
                     <Typography style={{ fontSize: 12, fontWeight: "bold" }}>
-                      Title
+                      Title <InfoIcon style={{ fontSize: "12px" }} />
                     </Typography>
                   </Grid>
                   <Grid item xs={6} style={{ backgroundColor: "blue" }}>
