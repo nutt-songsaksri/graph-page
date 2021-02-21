@@ -116,8 +116,8 @@ function App() {
                   style={{ backgroundColor: "pink", height: "30px" }}
                 >
                   <Grid item>
-                    <Button style={{ fontSize: 3 }}>
-                      <TrendingUpIcon />
+                    <Button style={{ fontSize: 3, textTransform: "lowercase" }}>
+                      <TrendingUpIcon style={{ fontSize: "20px" }} />
                       view more insights
                     </Button>
                   </Grid>
