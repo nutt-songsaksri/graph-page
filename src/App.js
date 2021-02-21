@@ -8,6 +8,7 @@ import {
   Typography,
   Button,
 } from "@material-ui/core";
+import TrendingUpIcon from "@material-ui/icons/TrendingUp";
 
 function App() {
   return (
@@ -81,7 +82,7 @@ function App() {
                   </Grid>
                   <Grid item xs={4} style={{ backgroundColor: "rosybrown" }}>
                     <Typography style={{ fontSize: 12, fontWeight: "bold" }}>
-                      Title
+                      T
                     </Typography>
                   </Grid>
                   <Grid
@@ -109,9 +110,16 @@ function App() {
                   </Grid>
                 </Grid>
 
-                <Grid item container style={{ backgroundColor: "pink" }}>
+                <Grid
+                  item
+                  container
+                  style={{ backgroundColor: "pink", height: "30px" }}
+                >
                   <Grid item>
-                    <Button style={{ fontSize: 3 }}>view more insights</Button>
+                    <Button style={{ fontSize: 3 }}>
+                      <TrendingUpIcon />
+                      view more insights
+                    </Button>
                   </Grid>
                 </Grid>
               </Grid>
