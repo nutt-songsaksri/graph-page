@@ -1,0 +1,31 @@
+.Title {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  color: #495057;
+}
+
+.InfoButton {
+  font-size: 5px !important;
+  height: 15px !important;
+  padding: 0px !important;
+  width: 15px !important;
+  min-width: 0px !important;
+  display: block !important;
+  margin-left: 5px !important;
+}
+
+.WeekButton {
+  font-size: 12px !important;
+  color: #999999 !important;
+  font-weight: normal !important;
+  font-family: "Sarala", sans-serif !important;
+  font-style: normal !important;
+  padding: 2px 6px !important;
+  text-transform: none !important;
+}
+
+.Container {
+  height: 27px;
+}

@@ -1,0 +1,18 @@
+.ViewmoreInsightsButton {
+  text-transform: lowercase !important;
+  font-size: 10px !important;
+  color: #495057 !important;
+  font-weight: normal !important;
+  font-family: "Sarala", sans-serif !important;
+  font-style: normal;
+  height: 17px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
+.TrendingUpIcon {
+  font-size: 16.5px !important;
+  color: #495057;
+  margin-right: 10px;
+}
