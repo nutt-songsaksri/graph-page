@@ -13,6 +13,14 @@ import {
 import TrendingUpIcon from "@material-ui/icons/TrendingUp";
 import InfoIcon from "@material-ui/icons/Info";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import { SvgIcon } from "@material-ui/core";
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+</style>;
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+</style>;
 
 function App() {
   return (
@@ -52,7 +60,9 @@ function App() {
                         style={{
                           fontSize: 18,
                           fontWeight: 600,
-                          fontFamily: "",
+                          fontFamily: "Poppins,sans-serif",
+                          fontStyle: "normal",
+                          color: "#495057",
                         }}
                       >
                         Title
@@ -81,7 +91,11 @@ function App() {
                       variant="outlined"
                       disabled
                       style={{
-                        fontSize: "3px",
+                        fontSize: 12,
+                        color: "#999999",
+                        fontWeight: "normal",
+                        fontFamily: "Sarala,sans-serif",
+                        fontStyle: "normal",
                         padding: "2px 6px",
                       }}
                     >
@@ -98,34 +112,103 @@ function App() {
                 >
                   <Grid
                     item
+                    container
+                    direction="row"
                     xs={4}
                     style={{
-                      backgroundColor: "whitesmoke",
+                      backgroundColor: "rebeccapurple",
                       paddingTop: "11px",
                     }}
                   >
-                    <Typography
+                    <Grid
+                      item
+                      container
                       style={{
-                        fontSize: 10,
-                        fontWeight: "bold",
+                        backgroundColor: "crimson",
+                        height: "25%",
                       }}
                     >
-                      <center>
-                        Option 100%
-                        <svg
-                          width="15"
-                          height="12"
-                          viewBox="0 0 15 12"
-                          fill="blue"
-                          xmlns="http://www.w3.org/2000/svg"
+                      <Grid
+                        item
+                        container
+                        justify="flex-end"
+                        alignItems="flex-start"
+                        style={{
+                          width: "50%",
+                          height: "100%",
+                          backgroundColor: "orange",
+                        }}
+                      >
+                        <Typography
+                          style={{
+                            fontSize: 14,
+                            fontWeight: 600,
+                            fontFamily: "Poppins,sans-serif",
+                            fontStyle: "normal",
+                            color: "#343A40",
+                            display: "block",
+                          }}
                         >
-                          <path
-                            d="M5.03055 0.212402C4.75703 2.7744 3.08739 5.5856 0.0187988 8.6432L3.93076 11.8128C9.50951 8.3688 13.014 4.5272 14.4443 0.288003C14.4529 0.262803 14.4614 0.237602 14.47 0.212402H5.03055Z"
-                            fill="#129219"
-                          />
-                        </svg>
-                      </center>
-                    </Typography>
+                          Option
+                        </Typography>
+                      </Grid>
+
+                      <Grid
+                        item
+                        container
+                        direction="column"
+                        alignItems="center"
+                        style={{
+                          width: "50%",
+                        }}
+                      >
+                        <Grid
+                          item
+                          style={{
+                            backgroundColor: "#000000",
+                            display: "block",
+                          }}
+                        >
+                          <Typography
+                            style={{
+                              fontSize: 12,
+                              fontWeight: "bold",
+                              fontFamily: "Poppins,sans-serif",
+                              fontStyle: "normal",
+                              color: "#FFFFFF",
+                              display: "block",
+                              marginLeft: 1,
+                              marginRight: 5,
+                            }}
+                          >
+                            100%
+                          </Typography>
+                        </Grid>
+                        <Grid
+                          item
+                          style={{
+                            marginLeft: 31,
+                            display: "block",
+                            backgroundColor: "mistyrose",
+                          }}
+                        >
+                          <Box>
+                            <svg
+                              width="13"
+                              height="10"
+                              viewBox="0 0 15 12"
+                              fill="blue"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.03055 0.212402C4.75703 2.7744 3.08739 5.5856 0.0187988 8.6432L3.93076 11.8128C9.50951 8.3688 13.014 4.5272 14.4443 0.288003C14.4529 0.262803 14.4614 0.237602 14.47 0.212402H5.03055Z"
+                                fill="#F99A02"
+                              />
+                            </svg>
+                          </Box>
+                        </Grid>
+                      </Grid>
+                    </Grid>
                   </Grid>
                   <Grid item xs={4} style={{ backgroundColor: "rosybrown" }}>
                     <Typography style={{ fontSize: 12, fontWeight: "bold" }}>
@@ -160,11 +243,25 @@ function App() {
                 <Grid
                   item
                   container
-                  style={{ backgroundColor: "pink", height: "30px" }}
+                  style={{ backgroundColor: "pink", height: "20px" }}
                 >
                   <Grid item>
-                    <Button style={{ fontSize: 3, textTransform: "lowercase" }}>
-                      <TrendingUpIcon style={{ fontSize: "20px" }} />
+                    <Button
+                      style={{
+                        fontSize: 3,
+                        textTransform: "lowercase",
+                        color: "#495057",
+                      }}
+                    >
+                      <TrendingUpIcon
+                        style={{
+                          fontSize: 10,
+                          color: "#495057",
+                          fontWeight: "normal",
+                          fontFamily: "Sarala,sans-serif",
+                          fontStyle: "normal",
+                        }}
+                      />
                       view more insights
                     </Button>
                   </Grid>
