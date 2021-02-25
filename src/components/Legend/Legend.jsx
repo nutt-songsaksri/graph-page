@@ -1,73 +1,36 @@
 import React from "react";
-import { Grid, Typography } from "@material-ui/core";
+import { Container, Grid, Typography } from "@material-ui/core";
 import classes from "./Legend.module.css";
+import Value from "./Value/Value";
 
 const Legend = (props) => {
-  return (
-    <Grid
-      container
-      // style={{
-      //   marginTop: "{props.top}",
-      //   marginLeft: "{props.left}",
-      // }}
-    >
-      <Grid
-        item
-        container
-        style={{
-          display: "block",
-          width: 152,
-          height: 21,
-        }}
-      >
+  const RightLegend = () => {
+    return (
+      <Grid container>
+        <Grid item>
+          <Value color={props.color} />
+        </Grid>
         <Grid item>
           <Typography className={classes.Option}>Option</Typography>
         </Grid>
       </Grid>
+    );
+  };
 
-      <Grid
-        item
-        container
-        direction="column"
-        style={{
-          display: "block",
-          width: 36.37,
-          height: 25.7,
-          marginLeft: 8.81,
-        }}
-      >
-        <Grid
-          item
-          style={{
-            backgroundColor: "#000000",
-          }}
-        >
-          <Typography className={classes.Percentage}>100%</Typography>
+  const LeftLegend = () => {
+    return (
+      <Grid container>
+        <Grid item>
+          <Typography className={classes.Option}>Option</Typography>
         </Grid>
-        <Grid
-          item
-          container
-          style={{
-            marginLeft: 22,
-          }}
-        >
-          <Grid item>
-            <svg
-              width="14.45px"
-              height="11.6px"
-              viewBox="0 0 15 12"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ display: "block", marginTop: -0.325 }}
-            >
-              <g fill={props.color}>
-                <path d="M5.03055 0.212402C4.75703 2.7744 3.08739 5.5856 0.0187988 8.6432L3.93076 11.8128C9.50951 8.3688 13.014 4.5272 14.4443 0.288003C14.4529 0.262803 14.4614 0.237602 14.47 0.212402H5.03055Z" />
-              </g>
-            </svg>
-          </Grid>
+        <Grid item>
+          <Value color={props.color} />
         </Grid>
       </Grid>
-    </Grid>
-  );
+    );
+  };
+  return <Container>{props.right ? RightLegend() : LeftLegend()}</Container>;
+  //ถ้า right ไม่เป็นทรู ไปเรียก LeftLegend วิธีนี้เรียกว่า Ternary Operator เงื่อนไขที่จบในตัวเดียวไม่ต้อง if else ตั้ง padding margin ตรง Option ให้ตรง
 };
 
 export default Legend;
