@@ -4,7 +4,6 @@ import { Box, Grid, Card, CardContent } from "@material-ui/core";
 import Topbar from "./components/Topbar/Topbar";
 import Viewmore from "./components/Viewmore/Viewmore";
 import Legend from "./components/Legend/Legend";
-import Point from "./components/Point/Point";
 import { Doughnut, Line } from "react-chartjs-2";
 import "chartjs-plugin-datalabels";
 
