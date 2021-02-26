@@ -30,7 +30,7 @@ const Legend = (props) => {
     );
   };
   return <Container>{props.right ? RightLegend() : LeftLegend()}</Container>;
-  //ถ้า right ไม่เป็นทรู ไปเรียก LeftLegend วิธีนี้เรียกว่า Ternary Operator เงื่อนไขที่จบในตัวเดียวไม่ต้อง if else ตั้ง padding margin ตรง Option ให้ตรง
+  //ถ้า right ไม่เป็นทรู ไปเรียก LeftLegend วิธีนี้เรียกว่า Ternary Operator เงื่อนไขที่จบในตัวเดียวไม่ต้อง if else
 };
 
 export default Legend;

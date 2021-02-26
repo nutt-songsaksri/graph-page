@@ -11,7 +11,7 @@ const Value = (props) => {
         display: "block",
         width: 36.37,
         height: 25.7,
-        marginLeft: 8.81,
+        // marginLeft: 8.81,
       }}
     >
       <Grid
